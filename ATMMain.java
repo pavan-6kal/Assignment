@@ -1,4 +1,4 @@
-package com.oops.assign;
+package com.assign.abstraction;
 
 import java.util.*;
 
@@ -12,14 +12,10 @@ public class ATMMain {
 		switch (key) {
 		case 1:
 			Account saving = new Savings(5000);
-			saving.withdraw(1000);
-			saving.withdraw(500);
 			break;
 		case 2:
 			Account current = new Current(6000);
-                        current.withdraw(600);
-			current.deposit(2000);
-			break;
+
 		}
 
 	}

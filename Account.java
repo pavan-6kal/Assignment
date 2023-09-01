@@ -1,6 +1,6 @@
-package com.oops.assign;
+package com.assign.abstraction;
 
-public class Account {
+public abstract class Account {
 	double balance;
 	
 	public Account(double balance) {
@@ -8,12 +8,8 @@ public class Account {
 		this.balance = balance;
 	}
 
-	void withdraw(int amount) {
-		System.out.println(amount);
-	}
-	void deposit(int amount) {
-		System.out.println(amount);
-	}
+	abstract void withdraw(int amount) ;
+	abstract void deposit(int amount) ;
 	double getBalance() {
 		return balance;
 	}
